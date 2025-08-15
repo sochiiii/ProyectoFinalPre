@@ -16,5 +16,33 @@ namespace ProyectoFinalPre104
         {
             InitializeComponent();
         }
+
+        private void btnAngulos_Click(object sender, EventArgs e)
+        {
+            Angulos ventana = new Angulos();
+            ventana.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Determinante ventanaDet = new Determinante();
+            ventanaDet.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Cajero ventanaCaj = new Cajero();
+            ventanaCaj.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Creditos ventanaCred = new Creditos();
+            ventanaCred.Show();
+            this.Hide();
+        }
     }
 }
