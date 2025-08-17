@@ -124,6 +124,32 @@
     <Content Include="assets\form_angl_a\triangulo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="assets\form_creditos\aaaaa.jpg" />
+    <Content Include="assets\form_creditos\conejo.jpg" />
+    <Content Include="assets\form_creditos\eeee.jpg" />
+    <Content Include="assets\form_creditos\img_michael.jpeg" />
+    <Content Include="assets\form_creditos\img_reb.jpeg" />
+    <Content Include="assets\form_creditos\img_reb_2.jpeg" />
+    <Content Include="assets\form_creditos\img_tato.jpeg" />
+    <Content Include="assets\form_creditos\img_will.jpeg" />
+    <Content Include="assets\form_creditos\img_xo.jpeg" />
+    <Content Include="assets\form_creditos\manito.jpg" />
+    <Content Include="assets\form_creditos\manitto2.jpg" />
+    <Content Include="assets\form_creditos\mouse.jpg" />
+    <Content Include="assets\form_creditos\muchos_cosos.jpg" />
+    <Content Include="assets\form_creditos\pc.jpg" />
+    <Content Include="assets\form_creditos\pro.jpg" />
+    <Content Include="assets\form_creditos\tele.jpg" />
+    <None Include="Resources\tele.jpg" />
+    <None Include="Resources\img_reb_2.jpeg" />
+    <None Include="Resources\eeee.jpg" />
+    <None Include="Resources\pro.jpg" />
+    <None Include="Resources\conejo.jpg" />
+    <None Include="Resources\corona.jpg" />
+    <None Include="Resources\pc.jpg" />
+    <None Include="Resources\txt.jpg" />
+    <None Include="Resources\manito.jpg" />
+    <None Include="Resources\aaaaa.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
