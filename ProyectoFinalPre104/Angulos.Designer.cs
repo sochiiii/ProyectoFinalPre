@@ -150,11 +150,14 @@
             // 
             // img_triangle
             // 
-            this.img_triangle.Image = global::ProyectoFinalPre104.Properties.Resources.triangulo;
-            this.img_triangle.Location = new System.Drawing.Point(394, 9);
+            this.img_triangle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.img_triangle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.img_triangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.img_triangle.Image = ((System.Drawing.Image)(resources.GetObject("img_triangle.Image")));
+            this.img_triangle.Location = new System.Drawing.Point(410, 30);
             this.img_triangle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.img_triangle.Name = "img_triangle";
-            this.img_triangle.Size = new System.Drawing.Size(425, 350);
+            this.img_triangle.Size = new System.Drawing.Size(376, 237);
             this.img_triangle.TabIndex = 7;
             // 
             // label4
