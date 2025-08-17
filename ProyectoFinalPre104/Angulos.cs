@@ -38,5 +38,10 @@ namespace ProyectoFinalPre104
         {
 
         }
+
+        private void Angulos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
