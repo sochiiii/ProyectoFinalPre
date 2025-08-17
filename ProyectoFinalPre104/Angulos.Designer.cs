@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Angulos));
-            this.titulo = new System.Windows.Forms.Label();
+            this.lcd = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.calc = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,31 +51,37 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.alpha = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.paso = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // titulo
+            // lcd
             // 
-            this.titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(139)))), ((int)(((byte)(134)))));
-            this.titulo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.titulo.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.titulo.Location = new System.Drawing.Point(8, 8);
-            this.titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(339, 59);
-            this.titulo.TabIndex = 0;
-            this.titulo.Text = ">>  Ingrese las longitudes de los catetos\r\n     \"a\" y \"b\"";
-            this.titulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.titulo.Click += new System.EventHandler(this.label1_Click);
+            this.lcd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(139)))), ((int)(((byte)(134)))));
+            this.lcd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lcd.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lcd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lcd.Location = new System.Drawing.Point(8, 8);
+            this.lcd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lcd.Name = "lcd";
+            this.lcd.Size = new System.Drawing.Size(339, 59);
+            this.lcd.TabIndex = 0;
+            this.lcd.Text = ">>  Ingrese las longitudes de los catetos\r\n     \"a\" y \"b\"";
+            this.lcd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lcd.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(666, 353);
+            this.button1.Location = new System.Drawing.Point(666, 348);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 34);
+            this.button1.Size = new System.Drawing.Size(156, 48);
             this.button1.TabIndex = 1;
             this.button1.Text = "Volver al menú";
             this.button1.UseVisualStyleBackColor = false;
@@ -83,16 +89,17 @@
             // 
             // calc
             // 
-            this.calc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.calc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(216)))), ((int)(((byte)(184)))));
             this.calc.Enabled = false;
-            this.calc.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.calc.FlatAppearance.BorderSize = 0;
-            this.calc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.calc.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calc.Location = new System.Drawing.Point(172, 74);
+            this.calc.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.calc.FlatAppearance.BorderSize = 3;
+            this.calc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calc.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(139)))), ((int)(((byte)(134)))));
+            this.calc.Location = new System.Drawing.Point(236, 120);
             this.calc.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.calc.Name = "calc";
-            this.calc.Size = new System.Drawing.Size(94, 42);
+            this.calc.Size = new System.Drawing.Size(111, 42);
             this.calc.TabIndex = 2;
             this.calc.Text = "Calcular";
             this.calc.UseVisualStyleBackColor = false;
@@ -101,36 +108,41 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 71);
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label2.Location = new System.Drawing.Point(12, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.Size = new System.Drawing.Size(47, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "a =";
             // 
             // val_a
             // 
-            this.val_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.val_a.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.val_a.Location = new System.Drawing.Point(47, 74);
-            this.val_a.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.val_a.MaxLength = 100;
+            this.val_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(197)))), ((int)(((byte)(160)))));
+            this.val_a.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.val_a.Location = new System.Drawing.Point(62, 75);
+            this.val_a.Margin = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.val_a.MaximumSize = new System.Drawing.Size(150, 0);
+            this.val_a.MaxLength = 20;
+            this.val_a.MinimumSize = new System.Drawing.Size(75, 0);
             this.val_a.Name = "val_a";
-            this.val_a.Size = new System.Drawing.Size(90, 20);
+            this.val_a.Size = new System.Drawing.Size(150, 25);
             this.val_a.TabIndex = 4;
             this.val_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.val_a.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // val_b
             // 
-            this.val_b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.val_b.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.val_b.Location = new System.Drawing.Point(47, 97);
-            this.val_b.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.val_b.MaxLength = 100;
+            this.val_b.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(197)))), ((int)(((byte)(160)))));
+            this.val_b.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.val_b.Location = new System.Drawing.Point(62, 138);
+            this.val_b.Margin = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.val_b.MaximumSize = new System.Drawing.Size(150, 0);
+            this.val_b.MaxLength = 20;
+            this.val_b.MinimumSize = new System.Drawing.Size(75, 0);
             this.val_b.Name = "val_b";
-            this.val_b.Size = new System.Drawing.Size(90, 20);
+            this.val_b.Size = new System.Drawing.Size(150, 25);
             this.val_b.TabIndex = 6;
             this.val_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.val_b.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -138,11 +150,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 94);
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label3.Location = new System.Drawing.Point(12, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.Size = new System.Drawing.Size(47, 30);
             this.label3.TabIndex = 5;
             this.label3.Text = "b =";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -150,11 +163,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 133);
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label1.Location = new System.Drawing.Point(116, 186);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(131, 30);
             this.label1.TabIndex = 8;
             this.label1.Text = "Resultados";
             // 
@@ -173,80 +187,88 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 184);
+            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label4.Location = new System.Drawing.Point(21, 238);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
+            this.label4.Size = new System.Drawing.Size(46, 30);
             this.label4.TabIndex = 9;
-            this.label4.Text = "a =";
+            this.label4.Text = "h =";
             // 
             // val_h
             // 
             this.val_h.AutoSize = true;
-            this.val_h.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.val_h.Location = new System.Drawing.Point(76, 184);
+            this.val_h.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.val_h.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.val_h.Location = new System.Drawing.Point(89, 238);
             this.val_h.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.val_h.Name = "val_h";
-            this.val_h.Size = new System.Drawing.Size(11, 13);
+            this.val_h.Size = new System.Drawing.Size(24, 30);
             this.val_h.TabIndex = 10;
             this.val_h.Text = "?";
             // 
             // angulo_A
             // 
             this.angulo_A.AutoSize = true;
-            this.angulo_A.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.angulo_A.Location = new System.Drawing.Point(76, 219);
+            this.angulo_A.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.angulo_A.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.angulo_A.Location = new System.Drawing.Point(90, 273);
             this.angulo_A.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.angulo_A.Name = "angulo_A";
-            this.angulo_A.Size = new System.Drawing.Size(15, 13);
+            this.angulo_A.Size = new System.Drawing.Size(35, 30);
             this.angulo_A.TabIndex = 12;
             this.angulo_A.Text = "?°";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 219);
+            this.label7.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label7.Location = new System.Drawing.Point(28, 276);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 13);
+            this.label7.Size = new System.Drawing.Size(39, 30);
             this.label7.TabIndex = 11;
-            this.label7.Text = "a =";
+            this.label7.Text = "  =";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // angulo_B
             // 
             this.angulo_B.AutoSize = true;
-            this.angulo_B.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.angulo_B.Location = new System.Drawing.Point(75, 254);
+            this.angulo_B.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.angulo_B.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.angulo_B.Location = new System.Drawing.Point(90, 308);
             this.angulo_B.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.angulo_B.Name = "angulo_B";
-            this.angulo_B.Size = new System.Drawing.Size(15, 13);
+            this.angulo_B.Size = new System.Drawing.Size(35, 30);
             this.angulo_B.TabIndex = 14;
             this.angulo_B.Text = "?°";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 254);
+            this.label9.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label9.Location = new System.Drawing.Point(35, 308);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(21, 13);
+            this.label9.Size = new System.Drawing.Size(32, 30);
             this.label9.TabIndex = 13;
-            this.label9.Text = "a =";
+            this.label9.Text = " =";
             // 
             // clear
             // 
-            this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
-            this.clear.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.clear.FlatAppearance.BorderSize = 0;
-            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.clear.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear.Location = new System.Drawing.Point(221, 169);
+            this.clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(216)))), ((int)(((byte)(184)))));
+            this.clear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.clear.FlatAppearance.BorderSize = 3;
+            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clear.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(139)))), ((int)(((byte)(134)))));
+            this.clear.Location = new System.Drawing.Point(236, 70);
             this.clear.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(94, 42);
+            this.clear.Size = new System.Drawing.Size(111, 42);
             this.clear.TabIndex = 15;
             this.clear.Text = "Limpiar";
             this.clear.UseVisualStyleBackColor = false;
@@ -332,12 +354,63 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "C";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.label10.Font = new System.Drawing.Font("Berlin Sans FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(161)))), ((int)(((byte)(123)))));
+            this.label10.Location = new System.Drawing.Point(378, 15);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(322, 37);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Triángulo Rectángulo";
+            // 
+            // alpha
+            // 
+            this.alpha.Image = ((System.Drawing.Image)(resources.GetObject("alpha.Image")));
+            this.alpha.Location = new System.Drawing.Point(5, 287);
+            this.alpha.Name = "alpha";
+            this.alpha.Size = new System.Drawing.Size(41, 13);
+            this.alpha.TabIndex = 23;
+            this.alpha.Click += new System.EventHandler(this.alpha_Click);
+            // 
+            // label11
+            // 
+            this.label11.Image = ((System.Drawing.Image)(resources.GetObject("label11.Image")));
+            this.label11.Location = new System.Drawing.Point(14, 308);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(26, 36);
+            this.label11.TabIndex = 24;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // paso
+            // 
+            this.paso.BackColor = System.Drawing.Color.White;
+            this.paso.Enabled = false;
+            this.paso.FlatAppearance.BorderSize = 3;
+            this.paso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.paso.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paso.Location = new System.Drawing.Point(373, 348);
+            this.paso.Margin = new System.Windows.Forms.Padding(2);
+            this.paso.Name = "paso";
+            this.paso.Size = new System.Drawing.Size(156, 48);
+            this.paso.TabIndex = 25;
+            this.paso.Text = "Paso a Paso";
+            this.paso.UseVisualStyleBackColor = false;
+            this.paso.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Angulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(212)))), ((int)(((byte)(205)))));
             this.ClientSize = new System.Drawing.Size(830, 407);
+            this.Controls.Add(this.paso);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.alpha);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -359,7 +432,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.calc);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.titulo);
+            this.Controls.Add(this.lcd);
             this.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -375,7 +448,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label titulo;
+        private System.Windows.Forms.Label lcd;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button calc;
         private System.Windows.Forms.Label label2;
@@ -397,5 +470,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label alpha;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button paso;
     }
 }
