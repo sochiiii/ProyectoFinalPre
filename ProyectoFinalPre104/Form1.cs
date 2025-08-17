@@ -47,7 +47,17 @@ namespace ProyectoFinalPre104
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            DialogResult opcion = MessageBox.Show(
+        "¿Desea salir del sistema?",   
+        "Confirmación",               
+        MessageBoxButtons.YesNo,      
+        MessageBoxIcon.Question       
+    );
+
+            if (opcion == DialogResult.Yes)
+            {
+                Application.Exit(); 
+            }
         }
 
         private void Form1_FormClosed(object sender, EventArgs e)
