@@ -44,5 +44,15 @@ namespace ProyectoFinalPre104
             ventanaCred.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void Form1_FormClosed(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
