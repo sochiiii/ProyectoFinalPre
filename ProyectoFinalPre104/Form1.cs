@@ -49,5 +49,10 @@ namespace ProyectoFinalPre104
         {
             Environment.Exit(0);
         }
+
+        private void Form1_FormClosed(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
