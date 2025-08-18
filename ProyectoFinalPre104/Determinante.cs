@@ -178,8 +178,8 @@ namespace ProyectoFinalPre104
                 double determinanteX = (r * d) - (b * s);
                 double determinanteY = (a * s) - (r * c);
 
-                x = determinanteX / determinante;
-                y = determinanteY / determinante;
+                x = Math.Round(determinanteX / determinante, 2);
+                y = Math.Round(determinanteY / determinante, 2);
             }
 
             

@@ -94,61 +94,73 @@
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(536, 177);
+            this.txtA.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtA.Location = new System.Drawing.Point(536, 181);
             this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(125, 22);
+            this.txtA.Size = new System.Drawing.Size(161, 27);
             this.txtA.TabIndex = 4;
             this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(536, 221);
+            this.txtB.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtB.Location = new System.Drawing.Point(536, 214);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(125, 22);
+            this.txtB.Size = new System.Drawing.Size(161, 27);
             this.txtB.TabIndex = 5;
             // 
             // txtR
             // 
+            this.txtR.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtR.Location = new System.Drawing.Point(536, 258);
             this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(125, 22);
+            this.txtR.Size = new System.Drawing.Size(161, 27);
             this.txtR.TabIndex = 6;
             // 
             // txtC
             // 
+            this.txtC.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtC.Location = new System.Drawing.Point(536, 301);
             this.txtC.Name = "txtC";
-            this.txtC.Size = new System.Drawing.Size(125, 22);
+            this.txtC.Size = new System.Drawing.Size(161, 27);
             this.txtC.TabIndex = 7;
             // 
             // txtD
             // 
+            this.txtD.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtD.Location = new System.Drawing.Point(536, 341);
             this.txtD.Name = "txtD";
-            this.txtD.Size = new System.Drawing.Size(125, 22);
+            this.txtD.Size = new System.Drawing.Size(161, 27);
             this.txtD.TabIndex = 8;
             // 
             // txtS
             // 
+            this.txtS.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtS.Location = new System.Drawing.Point(536, 379);
             this.txtS.Name = "txtS";
-            this.txtS.Size = new System.Drawing.Size(125, 22);
+            this.txtS.Size = new System.Drawing.Size(161, 27);
             this.txtS.TabIndex = 9;
             // 
             // txtX
             // 
+            this.txtX.BackColor = System.Drawing.Color.White;
+            this.txtX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtX.Enabled = false;
-            this.txtX.Location = new System.Drawing.Point(219, 272);
+            this.txtX.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtX.Location = new System.Drawing.Point(219, 258);
             this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(125, 22);
+            this.txtX.Size = new System.Drawing.Size(170, 25);
             this.txtX.TabIndex = 10;
             // 
             // txtY
             // 
+            this.txtY.BackColor = System.Drawing.Color.White;
+            this.txtY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtY.Enabled = false;
-            this.txtY.Location = new System.Drawing.Point(219, 319);
+            this.txtY.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtY.Location = new System.Drawing.Point(219, 312);
             this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(125, 22);
+            this.txtY.Size = new System.Drawing.Size(170, 25);
             this.txtY.TabIndex = 11;
             // 
             // Determinante
@@ -171,7 +183,11 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Determinante";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Determinante";
             this.ResumeLayout(false);
             this.PerformLayout();
