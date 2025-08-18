@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Determinante));
             this.label1 = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -147,7 +148,7 @@
             this.txtX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtX.Enabled = false;
             this.txtX.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX.Location = new System.Drawing.Point(219, 258);
+            this.txtX.Location = new System.Drawing.Point(219, 269);
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(170, 25);
             this.txtX.TabIndex = 10;
@@ -158,7 +159,7 @@
             this.txtY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtY.Enabled = false;
             this.txtY.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY.Location = new System.Drawing.Point(219, 312);
+            this.txtY.Location = new System.Drawing.Point(219, 322);
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(170, 25);
             this.txtY.TabIndex = 11;
@@ -184,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Determinante";
