@@ -155,6 +155,10 @@
     <Content Include="assets\form_creditos\pc.jpg" />
     <Content Include="assets\form_creditos\pro.jpg" />
     <Content Include="assets\form_creditos\tele.jpg" />
+    <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation %282%29.jpg" />
+    <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation %281%29.jpg" />
+    <None Include="Resources\Captura de pantalla 2025-08-17 201601.png" />
+    <None Include="Resources\Captura de pantalla 2025-08-17 201418.png" />
     <None Include="Resources\Red and White Modern Minimalist Retro Music Fest Instagram Post.png" />
     <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation.jpg" />
     <None Include="Resources\fondo1.png" />

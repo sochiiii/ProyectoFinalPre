@@ -50,6 +50,14 @@ namespace ProyectoFinalPre104
             RedondearBoton(button1, 15); // Bordes redondeados con radio 15
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

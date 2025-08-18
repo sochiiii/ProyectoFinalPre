@@ -38,12 +38,12 @@
             // btnAngulos
             // 
             this.btnAngulos.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.btnAngulos.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAngulos.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAngulos.ForeColor = System.Drawing.Color.White;
-            this.btnAngulos.Location = new System.Drawing.Point(186, 235);
+            this.btnAngulos.Location = new System.Drawing.Point(162, 235);
             this.btnAngulos.Margin = new System.Windows.Forms.Padding(2);
             this.btnAngulos.Name = "btnAngulos";
-            this.btnAngulos.Size = new System.Drawing.Size(105, 50);
+            this.btnAngulos.Size = new System.Drawing.Size(129, 50);
             this.btnAngulos.TabIndex = 0;
             this.btnAngulos.Text = "ÁNGULOS AGUDOS";
             this.btnAngulos.UseVisualStyleBackColor = false;
@@ -52,7 +52,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(331, 235);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
@@ -66,12 +66,12 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button2.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(491, 235);
+            this.button2.Location = new System.Drawing.Point(482, 235);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 50);
+            this.button2.Size = new System.Drawing.Size(129, 50);
             this.button2.TabIndex = 2;
             this.button2.Text = "CAJERO DEL BANCO";
             this.button2.UseVisualStyleBackColor = false;
@@ -80,12 +80,12 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button3.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(264, 329);
+            this.button3.Location = new System.Drawing.Point(303, 329);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 50);
+            this.button3.Size = new System.Drawing.Size(77, 50);
             this.button3.TabIndex = 3;
             this.button3.Text = "CRÉDITOS";
             this.button3.UseVisualStyleBackColor = false;
@@ -94,12 +94,12 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button4.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(419, 329);
+            this.button4.Location = new System.Drawing.Point(406, 329);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 50);
+            this.button4.Size = new System.Drawing.Size(77, 50);
             this.button4.TabIndex = 4;
             this.button4.Text = "SALIR";
             this.button4.UseVisualStyleBackColor = false;

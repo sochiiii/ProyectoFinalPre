@@ -73,6 +73,26 @@ namespace ProyectoFinalPre104.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_08_17_201418 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2025-08-17 201418", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2025_08_17_201601 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2025-08-17 201601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap conejo {
             get {
                 object obj = ResourceManager.GetObject("conejo", resourceCulture);
@@ -156,6 +176,26 @@ namespace ProyectoFinalPre104.Properties {
         internal static System.Drawing.Bitmap Orange_Blue_Retro_Guess_The_TV_Show_Game_Presentation {
             get {
                 object obj = ResourceManager.GetObject("Orange Blue Retro Guess The TV Show Game Presentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orange_Blue_Retro_Guess_The_TV_Show_Game_Presentation__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Orange Blue Retro Guess The TV Show Game Presentation (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Orange_Blue_Retro_Guess_The_TV_Show_Game_Presentation__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Orange Blue Retro Guess The TV Show Game Presentation (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

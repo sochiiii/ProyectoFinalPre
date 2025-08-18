@@ -127,6 +127,9 @@
   <data name="fondo_determinantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo_determinantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de pantalla 2025-08-17 201418" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2025-08-17 201418.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,17 +139,26 @@
   <data name="fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de pantalla 2025-08-17 201601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2025-08-17 201601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="conejo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\conejo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_reb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_reb_2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Red and White Modern Minimalist Retro Music Fest Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red and White Modern Minimalist Retro Music Fest Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\form_angl_a\triangulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Orange Blue Retro Guess The TV Show Game Presentation (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +175,7 @@
   <data name="corona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corona.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red and White Modern Minimalist Retro Music Fest Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Red and White Modern Minimalist Retro Music Fest Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orange Blue Retro Guess The TV Show Game Presentation (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
