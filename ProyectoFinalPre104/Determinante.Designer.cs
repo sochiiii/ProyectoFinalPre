@@ -29,7 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtR = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
+            this.txtD = new System.Windows.Forms.TextBox();
+            this.txtS = new System.Windows.Forms.TextBox();
+            this.txtX = new System.Windows.Forms.TextBox();
+            this.txtY = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -37,27 +47,130 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(175, 196);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 20);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Aquí va el ejercicio de determinante";
             // 
-            // button1
+            // btnVolver
             // 
-            this.button1.Location = new System.Drawing.Point(552, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 65);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Volver al menú";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.btnVolver.FlatAppearance.BorderSize = 0;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(39, 417);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(151, 42);
+            this.btnVolver.TabIndex = 1;
+            this.btnVolver.Text = "Regresar";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Location = new System.Drawing.Point(234, 417);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(143, 42);
+            this.btnLimpiar.TabIndex = 2;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.btnCalcular.FlatAppearance.BorderSize = 0;
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(716, 162);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(160, 37);
+            this.btnCalcular.TabIndex = 3;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtA
+            // 
+            this.txtA.Location = new System.Drawing.Point(536, 177);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(125, 22);
+            this.txtA.TabIndex = 4;
+            this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
+            // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(536, 221);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(125, 22);
+            this.txtB.TabIndex = 5;
+            // 
+            // txtR
+            // 
+            this.txtR.Location = new System.Drawing.Point(536, 258);
+            this.txtR.Name = "txtR";
+            this.txtR.Size = new System.Drawing.Size(125, 22);
+            this.txtR.TabIndex = 6;
+            // 
+            // txtC
+            // 
+            this.txtC.Location = new System.Drawing.Point(536, 301);
+            this.txtC.Name = "txtC";
+            this.txtC.Size = new System.Drawing.Size(125, 22);
+            this.txtC.TabIndex = 7;
+            // 
+            // txtD
+            // 
+            this.txtD.Location = new System.Drawing.Point(536, 341);
+            this.txtD.Name = "txtD";
+            this.txtD.Size = new System.Drawing.Size(125, 22);
+            this.txtD.TabIndex = 8;
+            // 
+            // txtS
+            // 
+            this.txtS.Location = new System.Drawing.Point(536, 379);
+            this.txtS.Name = "txtS";
+            this.txtS.Size = new System.Drawing.Size(125, 22);
+            this.txtS.TabIndex = 9;
+            // 
+            // txtX
+            // 
+            this.txtX.Enabled = false;
+            this.txtX.Location = new System.Drawing.Point(219, 272);
+            this.txtX.Name = "txtX";
+            this.txtX.Size = new System.Drawing.Size(125, 22);
+            this.txtX.TabIndex = 10;
+            // 
+            // txtY
+            // 
+            this.txtY.Enabled = false;
+            this.txtY.Location = new System.Drawing.Point(219, 319);
+            this.txtY.Name = "txtY";
+            this.txtY.Size = new System.Drawing.Size(125, 22);
+            this.txtY.TabIndex = 11;
             // 
             // Determinante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::ProyectoFinalPre104.Properties.Resources.fondo1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(913, 497);
+            this.Controls.Add(this.txtY);
+            this.Controls.Add(this.txtX);
+            this.Controls.Add(this.txtS);
+            this.Controls.Add(this.txtD);
+            this.Controls.Add(this.txtC);
+            this.Controls.Add(this.txtR);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Determinante";
             this.Text = "Determinante";
             this.ResumeLayout(false);
@@ -68,6 +181,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtR;
+        private System.Windows.Forms.TextBox txtC;
+        private System.Windows.Forms.TextBox txtD;
+        private System.Windows.Forms.TextBox txtS;
+        private System.Windows.Forms.TextBox txtX;
+        private System.Windows.Forms.TextBox txtY;
     }
 }
