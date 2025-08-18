@@ -155,6 +155,9 @@
     <Content Include="assets\form_creditos\pc.jpg" />
     <Content Include="assets\form_creditos\pro.jpg" />
     <Content Include="assets\form_creditos\tele.jpg" />
+    <None Include="Resources\fondo1.png" />
+    <None Include="Resources\fondo_determinantes.png" />
+    <None Include="Resources\fondo.png" />
     <None Include="Resources\tele.jpg" />
     <None Include="Resources\img_reb_2.jpeg" />
     <None Include="Resources\eeee.jpg" />
