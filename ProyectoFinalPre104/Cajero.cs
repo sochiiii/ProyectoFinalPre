@@ -21,7 +21,8 @@ namespace ProyectoFinalPre104
         {
             Form1 ventana = new Form1();
             ventana.Show();
-            this.Hide();
+            this.Close();
+            this.Dispose();
         }
 
         private void label2_Click(object sender, EventArgs e)
