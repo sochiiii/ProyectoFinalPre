@@ -153,6 +153,16 @@ namespace ProyectoFinalPre104.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Orange_Blue_Retro_Guess_The_TV_Show_Game_Presentation {
+            get {
+                object obj = ResourceManager.GetObject("Orange Blue Retro Guess The TV Show Game Presentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pc {
             get {
                 object obj = ResourceManager.GetObject("pc", resourceCulture);
@@ -166,6 +176,16 @@ namespace ProyectoFinalPre104.Properties {
         internal static System.Drawing.Bitmap pro {
             get {
                 object obj = ResourceManager.GetObject("pro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_and_White_Modern_Minimalist_Retro_Music_Fest_Instagram_Post {
+            get {
+                object obj = ResourceManager.GetObject("Red and White Modern Minimalist Retro Music Fest Instagram Post", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

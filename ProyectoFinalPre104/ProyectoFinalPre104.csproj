@@ -155,6 +155,8 @@
     <Content Include="assets\form_creditos\pc.jpg" />
     <Content Include="assets\form_creditos\pro.jpg" />
     <Content Include="assets\form_creditos\tele.jpg" />
+    <None Include="Resources\Red and White Modern Minimalist Retro Music Fest Instagram Post.png" />
+    <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation.jpg" />
     <None Include="Resources\fondo1.png" />
     <None Include="Resources\fondo_determinantes.png" />
     <None Include="Resources\fondo.png" />
