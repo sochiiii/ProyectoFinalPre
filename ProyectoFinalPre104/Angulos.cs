@@ -49,6 +49,11 @@ namespace ProyectoFinalPre104
             else
             {
                 calc.Enabled = false;
+                if (val_b.Text.Length >= 1 && !Double.TryParse(val_b.Text, out num_b))
+                {
+                    MessageBox.Show("Por favor, ingrese solo números válidos en los campos de los catetos.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    val_b.Text = val_b.Text.Remove(val_b.Text.Length - 1);
+                }
             }
         }
 
@@ -73,6 +78,11 @@ namespace ProyectoFinalPre104
             else
             {
                 calc.Enabled = false;
+                if (val_a.Text.Length >= 1 && !Double.TryParse(val_a.Text, out num_a))
+                {
+                    MessageBox.Show("Por favor, ingrese solo números válidos en los campos de los catetos.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    val_a.Text = val_a.Text.Remove(val_a.Text.Length - 1);
+                }
             }
         }
 
