@@ -148,6 +148,9 @@
   <data name="img_reb_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_reb_2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Orange Blue Retro Guess The TV Show Game Presentation (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Red and White Modern Minimalist Retro Music Fest Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Red and White Modern Minimalist Retro Music Fest Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,13 +172,13 @@
   <data name="manito" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\manito.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Orange Blue Retro Guess The TV Show Game Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="corona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corona.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Orange Blue Retro Guess The TV Show Game Presentation (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orange Blue Retro Guess The TV Show Game Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orange Blue Retro Guess The TV Show Game Presentation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="g5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\from_plano_cart\g5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
