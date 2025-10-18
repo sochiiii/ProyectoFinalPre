@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalPre104
 {
-    public partial class Form2 : Form
+    public partial class Plano_Cartesiano : Form
     {
         static Point origen = new Point(202, 243); // Punto de origen en la esquina superior izquierda
 
@@ -21,7 +21,7 @@ namespace ProyectoFinalPre104
         };
         static Double x_dimTopx = 50.6;
         static Double y_dimTopx = 44.0;
-        public Form2()
+        public Plano_Cartesiano()
         {
             InitializeComponent();
         }

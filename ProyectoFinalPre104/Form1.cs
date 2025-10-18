@@ -64,5 +64,12 @@ namespace ProyectoFinalPre104
         {
             Application.Exit();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Plano_Cartesiano plano_win = new Plano_Cartesiano();
+            plano_win.Show();
+            this.Hide();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinalPre104
 {
-    partial class Form2
+    partial class Plano_Cartesiano
     {
         /// <summary>
         /// Required designer variable.
