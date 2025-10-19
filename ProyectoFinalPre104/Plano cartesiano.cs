@@ -253,5 +253,64 @@ namespace ProyectoFinalPre104
             this.Close();
             this.Dispose();
         }
+
+        //Botón para mostrar/ocultar la información
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (mostar.Text == "OCULTAR")
+            {
+                //Ocultar información
+                lcd.BackColor = Color.DarkGray;
+                lbl_point.Hide();
+                lbl_punto_ingresado.Hide();
+                lbl_resultado.Hide();
+                lbl_ub.Hide();
+                point.Hide();
+                mostar.Text = "MOSTRAR";
+            }
+            else
+            {
+                //Mostrar información
+                lcd.BackColor = Color.FromArgb(0, 0, 145);
+                lbl_point.Show();
+                lbl_punto_ingresado.Show();
+                lbl_resultado.Show();
+                lbl_ub.Show();
+                point.Show();
+                mostar.Text = "OCULTAR";
+            }
+        }
+
+        //Botón para reiniciar las coordenadas
+        private void button7_Click(object sender, EventArgs e)
+        {
+            X_pos.Text = "0";
+            Y_pos.Text = "0";
+        }
+
+        //Botones para incrementar y decrementar las coordenadas
+        private void button2_Click(object sender, EventArgs e)
+        {
+            punto_ingresado[0] += 1;
+            X_pos.Text = punto_ingresado[0].ToString();
+        }
+
+        private void x_menos1_Click(object sender, EventArgs e)
+        {
+            punto_ingresado[0] -= 1;
+            X_pos.Text = punto_ingresado[0].ToString();
+        }
+
+        private void y_mas1_Click(object sender, EventArgs e)
+        {
+            punto_ingresado[1] += 1;
+            Y_pos.Text = punto_ingresado[1].ToString();
+        }
+
+        private void y_menos1_Click(object sender, EventArgs e)
+        {
+            punto_ingresado[1] -= 1;
+            Y_pos.Text = punto_ingresado[1].ToString();
+        }
     }
 }

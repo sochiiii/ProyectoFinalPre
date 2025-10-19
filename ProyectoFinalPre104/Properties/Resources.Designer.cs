@@ -183,6 +183,36 @@ namespace ProyectoFinalPre104.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mas1 {
+            get {
+                object obj = ResourceManager.GetObject("mas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mas11 {
+            get {
+                object obj = ResourceManager.GetObject("mas11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menos1 {
+            get {
+                object obj = ResourceManager.GetObject("menos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Orange_Blue_Retro_Guess_The_TV_Show_Game_Presentation {
             get {
                 object obj = ResourceManager.GetObject("Orange Blue Retro Guess The TV Show Game Presentation", resourceCulture);
