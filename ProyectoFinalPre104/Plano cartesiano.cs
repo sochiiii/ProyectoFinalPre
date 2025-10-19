@@ -9,18 +9,141 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoFinalPre104
-{
+{   /*
+    Se determina el cuadrante al que pertenece un punto en el plano cartesiano:
+        * Primer cuadrante:     x > 0 < y
+        * Segundo cuadrante:    x < 0 < y
+        * Tercer cuadrante:     x < 0 > y
+        * Cuarto cuadrante:     x > 0 > y
+        
+        * También puede posicionarce sobre un eje:
+        * Eje X: y = 0 ^ x != 0
+        * Eje Y: x = 0 ^ y != 0
+        
+        * También puede ser el origen:
+        * O: x = 0 = y
+    */
     public partial class Plano_Cartesiano : Form
     {
-        static Point origen = new Point(202, 243); // Punto de origen en la esquina superior izquierda
+        /*
+         * Datos necesarios para ubicar un punto:
+         *      # Centro del plano (226, 243). Coordenadas reales
+         *      # Dimensiones gráficas de los ejes
+         *      # Escala de los ejes
+         *      # Coordenadas relativas del punto a ubicar
+        */
+        static Double[] dim_plano_x = { 29, 420 };   //{ min, max }
+        static Double[] dim_plano_y = { 45, 440 };  //{ min, max }
+
+        static Double[] escala = { 10.0, 10.0 };    //{ escala_x, escala_y }
 
         // Matriz para almacenar las divisiones del plano cartesiano
-        static Double[,] divisiones = {
-            {-10.0, -7.5, - 5.0, - 2.5, 0, 2.5, 5.0, 7.5, 10.0},
-            {-10.0, -7.5, -5.0, -2.5, 0, 2.5, 5.0, 7.5, 10.0}
+        static String[,] divisiones = {
+            {"10x10^0", "-10x10^0" },     //{ x_div_1, x_div_2 }
+            {"10x10^0", "-10x10^0" }      //{ y_div_1, y_div_2 }
         };
-        static Double x_dimTopx = 50.6;
-        static Double y_dimTopx = 44.0;
+
+        //Posiciones del punto
+        static String[] resultados =
+        {
+            "Origen",
+            "Eje X positivo",
+            "Eje X negativo",
+            "Eje Y positivo",
+            "Eje Y negativo",
+            "Primer Cuadrante",
+            "Segundo Cuadrante",
+            "Tercer Cuadrante",
+            "Cuarto cuadrante"
+        };
+
+        static String resultado = resultados[0];
+
+        static Double[] punto_ingresado = { 0, 0 }; //punto ingresado por el usuario
+
+        //Función para actualizar el punto
+        void actualizar_punto()
+        {
+            //Autoajuste de escala
+            escala[0] = Math.Ceiling(Math.Log10(punto_ingresado[0]));
+            escala[1] = Math.Ceiling(Math.Log10(punto_ingresado[1]));
+
+            //Actualización de las divisiones
+            divisiones[0, 0] = "10x10^" + Math.Log10(escala[0]).ToString();
+            divisiones[0, 1] = "-10x10^" + Math.Log10(escala[0]).ToString();
+            divisiones[1, 0] = "10x10^" + Math.Log10(escala[1]).ToString();
+            divisiones[1, 1] = "-10x10^" + Math.Log10(escala[1]).ToString();
+
+            //Muestra las nuevas divisiones
+            x_div_1.Text = divisiones[0, 0];
+            x_div_2.Text = divisiones[0, 1];
+            y_div_1.Text = divisiones[1, 0];
+            y_div_2.Text = divisiones[1, 1];
+
+            //Mapeo de las coordenadas relativas en pantalla
+            /*
+             * Ecuación del mapeo
+             * Sea "a" el valor de entrada y se tienen dos rangos [B,C] y [D,E]
+             * Si se quiere pasar de "a" en el rango [B, C] a un "s" en el rango [D, E]
+             * Entonces se tiene la formula:
+             * f = [(a - B) * (E - D)]/(C - B) + D ; ó visto de otra forma
+             * f = [(a - (-escala)) * (pos_max - pos_min)]/(escala - (-escala)) + pos_min
+             * f = [(a + escala) * (pos_max - pos_min)]/(2 * escala) + pos_min
+            */
+            int x_pos = (int)(((punto_ingresado[0] + escala[0]) * (dim_plano_x[1] - dim_plano_x[0])) / (2 * escala[0]) + dim_plano_x[0]);
+            int y_pos = (int)(((punto_ingresado[1] + escala[1]) * (dim_plano_y[1] - dim_plano_y[0])) / (2 * escala[1]) + dim_plano_y[1]);
+
+            //Ubicamos el punto en pantalla
+            point.Location = new Point(x_pos, y_pos);
+
+            //Determinamos la posición del punto
+            if (punto_ingresado[0] == 0 && punto_ingresado[1] == 0)
+            {
+                resultado = resultados[0];
+            }
+            else if (punto_ingresado[0] == 0 && punto_ingresado[1] != 0)
+            {
+                if (punto_ingresado[1] > 0)
+                {
+                    resultado = resultados[3];
+                }
+                else
+                {
+                    resultado = resultados[4];
+                }
+            }
+            else if (punto_ingresado[0] != 0 && punto_ingresado[1] == 0)
+            {
+                if (punto_ingresado[0] > 0)
+                {
+                    resultado = resultados[1];
+                }
+                else
+                {
+                    resultado = resultados[2];
+                }
+            }
+            else if (punto_ingresado[0] > 0 && punto_ingresado[1] > 0)
+            {
+                resultado = resultados[5];
+            }
+            else if (punto_ingresado[0] < 0 && punto_ingresado[1] > 0)
+            {
+                resultado = resultados[6];
+            }
+            else if (punto_ingresado[0] < 0 && punto_ingresado[1] < 0)
+            {
+                resultado = resultados[7];
+            }
+            else if (punto_ingresado[0] > 0 && punto_ingresado[1] < 0)
+            {
+                resultado = resultados[8];
+            }
+
+            //Mostramos el resultado
+            lbl_resultado.Text = resultado;
+        }
+
         public Plano_Cartesiano()
         {
             InitializeComponent();
@@ -35,32 +158,10 @@ namespace ProyectoFinalPre104
         {
 
         }
-    }
 
-    //Clase para representar un punto en el plano cartesiano
-    public class Punto
-    {
-        // Coordenadas del punto
-        public Double x;
-        public Double y;
-
-        // Constructor
-        public Punto(Double x, Double y)
+        private void label4_Click(object sender, EventArgs e)
         {
-            this.x = x;
-            this.y = y;
-        }
 
-        // Método para representar el punto como una cadena
-        public override string ToString()
-        {
-            return $"({x}, {y})";
-        }
-
-        // Método para obtener el punto
-        public Punto GetPoint()
-        {
-            return this;
         }
     }
 }
