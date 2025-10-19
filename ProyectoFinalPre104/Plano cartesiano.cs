@@ -153,6 +153,8 @@ namespace ProyectoFinalPre104
             lbl_resultado.Text = resultado;
         }
 
+        static Boolean mostrar_info = false; //Variable para controlar la visibilidad de la información
+
         public Plano_Cartesiano()
         {
             InitializeComponent();
@@ -205,7 +207,16 @@ namespace ProyectoFinalPre104
                     X_pos.Text = punto_ingresado[0].ToString();
                     X_pos.SelectionStart = X_pos.Text.Length; // Mover el cursor al final
                 }
-                actualizar_punto();
+                if (mostrar_info == true)
+                {
+                    mostar.Text = "CALCULAR";
+                    point.Hide();
+                    lcd.BackColor = Color.DarkGray;
+                    lbl_point.BackColor = Color.DarkGray;
+                    lbl_punto_ingresado.BackColor = Color.DarkGray;
+                    lbl_resultado.BackColor = Color.DarkGray;
+                    lbl_ub.BackColor = Color.DarkGray;
+                }
             }
         }
 
@@ -241,8 +252,10 @@ namespace ProyectoFinalPre104
                     Y_pos.Text = punto_ingresado[1].ToString();
                     Y_pos.SelectionStart = Y_pos.Text.Length; // Mover el cursor al final
                 }
-                
-                    actualizar_punto();
+                if (mostrar_info == true)
+                {
+                    mostar.Text = "CALCULAR";
+                }
             }
         }
 
@@ -257,7 +270,19 @@ namespace ProyectoFinalPre104
         //Botón para mostrar/ocultar la información
         private void button6_Click(object sender, EventArgs e)
         {
-            if (mostar.Text == "OCULTAR")
+            if(mostar.Text == "CALCULAR")
+            {
+                //Actualizar punto antes de mostrar/ocultar
+                actualizar_punto();
+                point.Show();
+                lbl_punto_ingresado.BackColor = Color.FromArgb(0, 0, 145);
+                lbl_resultado.BackColor = Color.FromArgb(0, 0, 145);
+                lbl_ub.BackColor = Color.FromArgb(0, 0, 145);
+                lbl_point.BackColor = Color.FromArgb(0, 0, 145);
+                lcd.BackColor = Color.FromArgb(0, 0, 145);
+                mostar.Text = "OCULTAR";
+            }
+            else if (mostar.Text == "OCULTAR")
             {
                 //Ocultar información
                 lcd.BackColor = Color.DarkGray;
@@ -267,6 +292,7 @@ namespace ProyectoFinalPre104
                 lbl_ub.Hide();
                 point.Hide();
                 mostar.Text = "MOSTRAR";
+                mostrar_info = false;
             }
             else
             {
@@ -278,6 +304,7 @@ namespace ProyectoFinalPre104
                 lbl_ub.Show();
                 point.Show();
                 mostar.Text = "OCULTAR";
+                mostrar_info = true;
             }
         }
 
