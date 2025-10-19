@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Plano_Cartesiano));
             this.lbl_planno = new System.Windows.Forms.Label();
-            this.point = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.x_div_1 = new System.Windows.Forms.Label();
             this.x_div_2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.point = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_planno
@@ -56,14 +56,6 @@
             this.lbl_planno.Size = new System.Drawing.Size(430, 440);
             this.lbl_planno.TabIndex = 0;
             this.lbl_planno.Click += new System.EventHandler(this.lbl_planno_Click);
-            // 
-            // point
-            // 
-            this.point.BackColor = System.Drawing.Color.Red;
-            this.point.Location = new System.Drawing.Point(226, 243);
-            this.point.Name = "point";
-            this.point.Size = new System.Drawing.Size(10, 10);
-            this.point.TabIndex = 1;
             // 
             // label1
             // 
@@ -100,6 +92,7 @@
             this.X_pos.TabIndex = 5;
             this.X_pos.Text = "0";
             this.X_pos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.X_pos.TextChanged += new System.EventHandler(this.X_pos_TextChanged);
             // 
             // Y_pos
             // 
@@ -109,6 +102,7 @@
             this.Y_pos.TabIndex = 6;
             this.Y_pos.Text = "0";
             this.Y_pos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Y_pos.TextChanged += new System.EventHandler(this.Y_pos_TextChanged);
             // 
             // label4
             // 
@@ -207,6 +201,14 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "0";
             // 
+            // point
+            // 
+            this.point.BackColor = System.Drawing.Color.Red;
+            this.point.Location = new System.Drawing.Point(226, 243);
+            this.point.Name = "point";
+            this.point.Size = new System.Drawing.Size(10, 10);
+            this.point.TabIndex = 16;
+            // 
             // Plano_Cartesiano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -242,7 +244,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_planno;
-        private System.Windows.Forms.Label point;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -257,5 +258,6 @@
         private System.Windows.Forms.Label x_div_1;
         private System.Windows.Forms.Label x_div_2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label point;
     }
 }

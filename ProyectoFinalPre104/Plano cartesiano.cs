@@ -32,8 +32,8 @@ namespace ProyectoFinalPre104
          *      # Escala de los ejes
          *      # Coordenadas relativas del punto a ubicar
         */
-        static Double[] dim_plano_x = { 29, 420 };   //{ min, max }
-        static Double[] dim_plano_y = { 45, 440 };  //{ min, max }
+        static Double[] dim_plano_x = { 30, 422 };   //{ min, max }
+        static Double[] dim_plano_y = { 45, 441 };   //{ min, max } Invertido por que en pantalla el eje Y está invertido
 
         static Double[] escala = { 10.0, 10.0 };    //{ escala_x, escala_y }
 
@@ -64,15 +64,15 @@ namespace ProyectoFinalPre104
         //Función para actualizar el punto
         void actualizar_punto()
         {
-            //Autoajuste de escala
-            escala[0] = Math.Ceiling(Math.Log10(punto_ingresado[0]));
-            escala[1] = Math.Ceiling(Math.Log10(punto_ingresado[1]));
+            //Autoajuste de escala (Verifica q el numero no sea 0 para evitar error de logaritmo)
+            escala[0] = (punto_ingresado[0] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(punto_ingresado[0]))) : 1;
+            escala[1] = (punto_ingresado[1] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(punto_ingresado[1]))) : 1;
 
-            //Actualización de las divisiones
-            divisiones[0, 0] = "10x10^" + Math.Log10(escala[0]).ToString();
-            divisiones[0, 1] = "-10x10^" + Math.Log10(escala[0]).ToString();
-            divisiones[1, 0] = "10x10^" + Math.Log10(escala[1]).ToString();
-            divisiones[1, 1] = "-10x10^" + Math.Log10(escala[1]).ToString();
+            //Actualización de las divisiones (Verifica q el numero no sea 0 para evitar error de logaritmo)
+            divisiones[0, 0] = "10x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
+            divisiones[0, 1] = "-10x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
+            divisiones[1, 0] = "10x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
+            divisiones[1, 1] = "-10x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
 
             //Muestra las nuevas divisiones
             x_div_1.Text = divisiones[0, 0];
@@ -91,10 +91,15 @@ namespace ProyectoFinalPre104
              * f = [(a + escala) * (pos_max - pos_min)]/(2 * escala) + pos_min
             */
             int x_pos = (int)(((punto_ingresado[0] + escala[0]) * (dim_plano_x[1] - dim_plano_x[0])) / (2 * escala[0]) + dim_plano_x[0]);
-            int y_pos = (int)(((punto_ingresado[1] + escala[1]) * (dim_plano_y[1] - dim_plano_y[0])) / (2 * escala[1]) + dim_plano_y[1]);
+            int y_pos = (int)(((punto_ingresado[1] + escala[1]) * (dim_plano_y[0] - dim_plano_y[1])) / (2 * escala[1]) + dim_plano_y[1]);
 
             //Ubicamos el punto en pantalla
             point.Location = new Point(x_pos, y_pos);
+            point.BringToFront();
+
+            //Mostramos las coordenadas del punto
+            //lbl_punto_ingresado.Text = "( " + punto_ingresado[0].ToString() + ", " + punto_ingresado[1].ToString() + ")";
+            lbl_punto_ingresado.Text = "( " + x_pos.ToString() + ", " + y_pos.ToString() + ")";
 
             //Determinamos la posición del punto
             if (punto_ingresado[0] == 0 && punto_ingresado[1] == 0)
@@ -162,6 +167,79 @@ namespace ProyectoFinalPre104
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void X_pos_TextChanged(object sender, EventArgs e)
+        {
+            //Validación de la entrada
+            if (!Double.TryParse(X_pos.Text, out punto_ingresado[0]))
+            {
+                if (X_pos.Text != "-" && !String.IsNullOrEmpty(X_pos.Text))
+                {
+                    MessageBox.Show("Por favor ingrese un valor numérico válido para la coordenada X.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    X_pos.Text = "0";
+                    punto_ingresado[0] = 0;
+                    actualizar_punto();
+                }
+                else if (String.IsNullOrEmpty(X_pos.Text))
+                {
+                    X_pos.Text = "0";
+                    punto_ingresado[0] = 0;
+                    actualizar_punto();
+                }
+                else
+                {
+                    //Permitir el signo negativo temporalmente
+                    return;
+                }
+            }
+            else
+            {
+                if (X_pos.Text.StartsWith("0") && X_pos.Text.Length > 1 && !X_pos.Text.StartsWith("0."))
+                {
+                    // Evitar números con ceros a la izquierda
+                    X_pos.Text = punto_ingresado[0].ToString();
+                    X_pos.SelectionStart = X_pos.Text.Length; // Mover el cursor al final
+                }
+                actualizar_punto();
+            }
+        }
+
+        private void Y_pos_TextChanged(object sender, EventArgs e)
+        {
+            //Validación de la entrada
+            if (!Double.TryParse(Y_pos.Text, out punto_ingresado[1]))
+            {
+                if (Y_pos.Text != "-" && !String.IsNullOrEmpty(Y_pos.Text))
+                {
+                    MessageBox.Show("Por favor ingrese un valor numérico válido para la coordenada Y.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Y_pos.Text = "0";
+                    punto_ingresado[1] = 0;
+                    actualizar_punto();
+                }
+                else if (String.IsNullOrEmpty(Y_pos.Text))
+                {
+                    Y_pos.Text = "0";
+                    punto_ingresado[1] = 0;
+                    actualizar_punto();
+                }
+                else
+                {
+                    //Permitir el signo negativo temporalmente
+                    return;
+                }
+            }
+            else
+            {
+                if (Y_pos.Text.StartsWith("0") && Y_pos.Text.Length > 1 && !Y_pos.Text.StartsWith("0."))
+                {
+                    // Evitar números con ceros a la izquierda
+                    Y_pos.Text = punto_ingresado[1].ToString();
+                    Y_pos.SelectionStart = Y_pos.Text.Length; // Mover el cursor al final
+                }
+                
+                    actualizar_punto();
+            }
         }
     }
 }
