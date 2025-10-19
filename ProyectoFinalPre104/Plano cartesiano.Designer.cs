@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(511, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 23);
@@ -228,12 +228,13 @@
             // 
             // volver
             // 
+            this.volver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.volver.Location = new System.Drawing.Point(479, 385);
             this.volver.Name = "volver";
             this.volver.Size = new System.Drawing.Size(360, 52);
             this.volver.TabIndex = 17;
             this.volver.Text = "Volver";
-            this.volver.UseVisualStyleBackColor = true;
+            this.volver.UseVisualStyleBackColor = false;
             this.volver.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
@@ -255,22 +256,24 @@
             // 
             // mostar
             // 
+            this.mostar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.mostar.Location = new System.Drawing.Point(510, 144);
             this.mostar.Name = "mostar";
             this.mostar.Size = new System.Drawing.Size(137, 30);
             this.mostar.TabIndex = 24;
             this.mostar.Text = "MOSTRAR";
-            this.mostar.UseVisualStyleBackColor = true;
+            this.mostar.UseVisualStyleBackColor = false;
             this.mostar.Click += new System.EventHandler(this.button6_Click);
             // 
             // limpiar
             // 
+            this.limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.limpiar.Location = new System.Drawing.Point(665, 144);
             this.limpiar.Name = "limpiar";
             this.limpiar.Size = new System.Drawing.Size(138, 30);
             this.limpiar.TabIndex = 25;
             this.limpiar.Text = "LIMPIAR";
-            this.limpiar.UseVisualStyleBackColor = true;
+            this.limpiar.UseVisualStyleBackColor = false;
             this.limpiar.Click += new System.EventHandler(this.button7_Click);
             // 
             // y_menos1
