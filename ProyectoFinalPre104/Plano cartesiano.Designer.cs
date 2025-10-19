@@ -150,9 +150,9 @@
             this.y_div_1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.y_div_1.Location = new System.Drawing.Point(243, 43);
             this.y_div_1.Name = "y_div_1";
-            this.y_div_1.Size = new System.Drawing.Size(52, 16);
+            this.y_div_1.Size = new System.Drawing.Size(44, 16);
             this.y_div_1.TabIndex = 11;
-            this.y_div_1.Text = "10x10^0";
+            this.y_div_1.Text = "1x10^0";
             // 
             // y_div_2
             // 
@@ -162,9 +162,9 @@
             this.y_div_2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.y_div_2.Location = new System.Drawing.Point(243, 434);
             this.y_div_2.Name = "y_div_2";
-            this.y_div_2.Size = new System.Drawing.Size(57, 16);
+            this.y_div_2.Size = new System.Drawing.Size(49, 16);
             this.y_div_2.TabIndex = 12;
-            this.y_div_2.Text = "-10x10^0";
+            this.y_div_2.Text = "-1x10^0";
             // 
             // x_div_1
             // 
@@ -174,9 +174,9 @@
             this.x_div_1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.x_div_1.Location = new System.Drawing.Point(408, 268);
             this.x_div_1.Name = "x_div_1";
-            this.x_div_1.Size = new System.Drawing.Size(52, 16);
+            this.x_div_1.Size = new System.Drawing.Size(44, 16);
             this.x_div_1.TabIndex = 13;
-            this.x_div_1.Text = "10x10^0";
+            this.x_div_1.Text = "1x10^0";
             // 
             // x_div_2
             // 
@@ -184,11 +184,11 @@
             this.x_div_2.BackColor = System.Drawing.Color.DimGray;
             this.x_div_2.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.x_div_2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.x_div_2.Location = new System.Drawing.Point(0, 268);
+            this.x_div_2.Location = new System.Drawing.Point(12, 268);
             this.x_div_2.Name = "x_div_2";
-            this.x_div_2.Size = new System.Drawing.Size(57, 16);
+            this.x_div_2.Size = new System.Drawing.Size(49, 16);
             this.x_div_2.TabIndex = 14;
-            this.x_div_2.Text = "-10x10^0";
+            this.x_div_2.Text = "-1x10^0";
             // 
             // label7
             // 

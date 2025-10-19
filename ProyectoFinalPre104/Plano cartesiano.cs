@@ -84,10 +84,10 @@ namespace ProyectoFinalPre104
             escala[1] = (punto_ingresado[1] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(Math.Abs(punto_ingresado[1])))) : 1;
 
             //Actualización de las divisiones (Verifica q el numero no sea 0 para evitar error de logaritmo)
-            divisiones[0, 0] = "10x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
-            divisiones[0, 1] = "-10x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
-            divisiones[1, 0] = "10x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
-            divisiones[1, 1] = "-10x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
+            divisiones[0, 0] = "1x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
+            divisiones[0, 1] = "-1x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
+            divisiones[1, 0] = "1x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
+            divisiones[1, 1] = "-1x10^" + ((punto_ingresado[1] != 0) ? Math.Log10(escala[1]).ToString() : "1");
 
             //Muestra las nuevas divisiones
             x_div_1.Text = divisiones[0, 0];
