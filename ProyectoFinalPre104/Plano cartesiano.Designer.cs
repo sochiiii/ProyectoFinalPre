@@ -229,6 +229,7 @@
             // volver
             // 
             this.volver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.volver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.volver.Location = new System.Drawing.Point(479, 385);
             this.volver.Name = "volver";
             this.volver.Size = new System.Drawing.Size(360, 52);
@@ -257,6 +258,7 @@
             // mostar
             // 
             this.mostar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.mostar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.mostar.Location = new System.Drawing.Point(510, 144);
             this.mostar.Name = "mostar";
             this.mostar.Size = new System.Drawing.Size(137, 30);
@@ -268,6 +270,7 @@
             // limpiar
             // 
             this.limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.limpiar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.limpiar.Location = new System.Drawing.Point(665, 144);
             this.limpiar.Name = "limpiar";
             this.limpiar.Size = new System.Drawing.Size(138, 30);
