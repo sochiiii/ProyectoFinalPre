@@ -61,12 +61,27 @@ namespace ProyectoFinalPre104
 
         static Double[] punto_ingresado = { 0, 0 }; //punto ingresado por el usuario
 
+        //Funcion para mapear un valor de un rango a otro
+        public static Double map(Double value, Double inMin, Double inMax, Double outMin, Double outMax)
+        {
+            //Mapeo de las coordenadas relativas en pantalla
+            /*
+             * Ecuación del mapeo
+             * Sea "a" el valor de entrada y se tienen dos rangos [B,C] y [D,E]
+             * Si se quiere pasar de "a" en el rango [B, C] a un "s" en el rango [D, E]
+             * Entonces se tiene la formula:
+             * f = [(a - B) * (E - D)]/(C - B) + D ; ó visto de otra forma
+             * f = [(a - (-escala)) * (pos_max - pos_min)]/(escala - (-escala)) + pos_min
+            */
+            return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+        }
+
         //Función para actualizar el punto
         void actualizar_punto()
         {
             //Autoajuste de escala (Verifica q el numero no sea 0 para evitar error de logaritmo)
-            escala[0] = (punto_ingresado[0] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(punto_ingresado[0]))) : 1;
-            escala[1] = (punto_ingresado[1] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(punto_ingresado[1]))) : 1;
+            escala[0] = (punto_ingresado[0] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(Math.Abs(punto_ingresado[0])))) : 1;
+            escala[1] = (punto_ingresado[1] != 0) ? Math.Pow(10, Math.Ceiling(Math.Log10(Math.Abs(punto_ingresado[1])))) : 1;
 
             //Actualización de las divisiones (Verifica q el numero no sea 0 para evitar error de logaritmo)
             divisiones[0, 0] = "10x10^" + ((punto_ingresado[0] != 0) ? Math.Log10(escala[0]).ToString() : "1");
@@ -80,27 +95,16 @@ namespace ProyectoFinalPre104
             y_div_1.Text = divisiones[1, 0];
             y_div_2.Text = divisiones[1, 1];
 
-            //Mapeo de las coordenadas relativas en pantalla
-            /*
-             * Ecuación del mapeo
-             * Sea "a" el valor de entrada y se tienen dos rangos [B,C] y [D,E]
-             * Si se quiere pasar de "a" en el rango [B, C] a un "s" en el rango [D, E]
-             * Entonces se tiene la formula:
-             * f = [(a - B) * (E - D)]/(C - B) + D ; ó visto de otra forma
-             * f = [(a - (-escala)) * (pos_max - pos_min)]/(escala - (-escala)) + pos_min
-             * f = [(a + escala) * (pos_max - pos_min)]/(2 * escala) + pos_min
-            */
-            int x_pos = (int)(((punto_ingresado[0] + escala[0]) * (dim_plano_x[1] - dim_plano_x[0])) / (2 * escala[0]) + dim_plano_x[0]);
-            int y_pos = (int)(((punto_ingresado[1] + escala[1]) * (dim_plano_y[0] - dim_plano_y[1])) / (2 * escala[1]) + dim_plano_y[1]);
+            int x_pos = (int)map(punto_ingresado[0], -1*escala[0], escala[0], dim_plano_x[0], dim_plano_x[1]);
+            int y_pos = (int)map(punto_ingresado[1], -1 * escala[1], escala[1], dim_plano_y[1], dim_plano_y[0]);
 
             //Ubicamos el punto en pantalla
             point.Location = new Point(x_pos, y_pos);
             point.BringToFront();
 
             //Mostramos las coordenadas del punto
-            //lbl_punto_ingresado.Text = "( " + punto_ingresado[0].ToString() + ", " + punto_ingresado[1].ToString() + ")";
-            lbl_punto_ingresado.Text = "( " + x_pos.ToString() + ", " + y_pos.ToString() + ")";
-
+            lbl_punto_ingresado.Text = "( " + punto_ingresado[0].ToString() + ", " + punto_ingresado[1].ToString() + ")";
+            
             //Determinamos la posición del punto
             if (punto_ingresado[0] == 0 && punto_ingresado[1] == 0)
             {
@@ -240,6 +244,14 @@ namespace ProyectoFinalPre104
                 
                     actualizar_punto();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 ventana = new Form1();
+            ventana.Show();
+            this.Close();
+            this.Dispose();
         }
     }
 }
