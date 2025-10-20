@@ -84,6 +84,12 @@
       <DependentUpon>Plano cartesiano.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Promedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promedio.Designer.cs">
+      <DependentUpon>Promedio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Angulos.resx">
       <DependentUpon>Angulos.cs</DependentUpon>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plano cartesiano.resx">
       <DependentUpon>Plano cartesiano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Promedio.resx">
+      <DependentUpon>Promedio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

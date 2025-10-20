@@ -60,5 +60,10 @@ namespace ProyectoFinalPre104
         {
 
         }
+
+        private void Creditos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
