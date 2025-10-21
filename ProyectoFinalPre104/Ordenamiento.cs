@@ -62,10 +62,10 @@ namespace ProyectoFinalPre104
                 txt3.Focus();
                 return;
             }
-            double r;
+            double c;
             try
             {
-                r = Convert.ToDouble(txt3.Text);
+                c = Convert.ToDouble(txt3.Text);
             }
             catch
             {
@@ -74,7 +74,60 @@ namespace ProyectoFinalPre104
                 txt3.Focus();
                 return;
             }
-            
+
+            //Cálculos
+            double menor, mayor, centro;
+            Orden(a, b, c, out menor, out mayor, out centro);
+
+            //Mostrando los resultados
+            txtMenor.Text=menor.ToString();
+            txtCentro.Text = centro.ToString();
+            txtMayor.Text = mayor.ToString();
+        }
+
+        private void Orden(double a, double b, double c, out double menor, out double mayor, out double centro)
+        {
+            //Encontrando el número menor
+            if(a<=b && a <= c)
+            {
+                menor = a;
+            } 
+            else if (b <= a && b <= c)
+            {
+                menor = b;
+            }
+            else
+            {
+                menor = c;
+            }
+
+            //Encontrando el número mayor
+            if (a >= b && a >= c)
+            {
+                mayor = a;
+            }
+            else if (b >= a && b >= c)
+            {
+                mayor = b;
+            }
+            else
+            {
+                mayor = c;
+            }
+
+            //Encontrando el número del centro
+            if (a != menor && a != mayor)
+            {
+                centro = a;
+            }
+            else if (b != menor && b != mayor)
+            {
+                centro = b;
+            }
+            else
+            {
+                centro = c;
+            }
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -90,6 +143,9 @@ namespace ProyectoFinalPre104
             txt1.Text = "";
             txt2.Text = "";
             txt3.Text = "";
+            txtMenor.Text = "";
+            txtCentro.Text = "";
+            txtMayor.Text = "";
             txt1.Focus();
         }
     }

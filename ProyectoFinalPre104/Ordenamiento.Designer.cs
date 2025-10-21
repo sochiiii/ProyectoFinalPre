@@ -35,8 +35,8 @@
             this.txt2 = new System.Windows.Forms.TextBox();
             this.txt3 = new System.Windows.Forms.TextBox();
             this.txtMenor = new System.Windows.Forms.TextBox();
-            this.textCentro = new System.Windows.Forms.TextBox();
-            this.textMayor = new System.Windows.Forms.TextBox();
+            this.txtCentro = new System.Windows.Forms.TextBox();
+            this.txtMayor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOrdenar
@@ -119,27 +119,27 @@
             this.txtMenor.Size = new System.Drawing.Size(138, 25);
             this.txtMenor.TabIndex = 11;
             // 
-            // textCentro
+            // txtCentro
             // 
-            this.textCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.textCentro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textCentro.Enabled = false;
-            this.textCentro.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCentro.Location = new System.Drawing.Point(656, 278);
-            this.textCentro.Name = "textCentro";
-            this.textCentro.Size = new System.Drawing.Size(138, 25);
-            this.textCentro.TabIndex = 12;
+            this.txtCentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.txtCentro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCentro.Enabled = false;
+            this.txtCentro.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCentro.Location = new System.Drawing.Point(656, 278);
+            this.txtCentro.Name = "txtCentro";
+            this.txtCentro.Size = new System.Drawing.Size(138, 25);
+            this.txtCentro.TabIndex = 12;
             // 
-            // textMayor
+            // txtMayor
             // 
-            this.textMayor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.textMayor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textMayor.Enabled = false;
-            this.textMayor.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMayor.Location = new System.Drawing.Point(656, 351);
-            this.textMayor.Name = "textMayor";
-            this.textMayor.Size = new System.Drawing.Size(138, 25);
-            this.textMayor.TabIndex = 13;
+            this.txtMayor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.txtMayor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMayor.Enabled = false;
+            this.txtMayor.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMayor.Location = new System.Drawing.Point(656, 351);
+            this.txtMayor.Name = "txtMayor";
+            this.txtMayor.Size = new System.Drawing.Size(138, 25);
+            this.txtMayor.TabIndex = 13;
             // 
             // Ordenamiento
             // 
@@ -148,8 +148,8 @@
             this.BackgroundImage = global::ProyectoFinalPre104.Properties.Resources.ventanaOrdenamiento;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(892, 523);
-            this.Controls.Add(this.textMayor);
-            this.Controls.Add(this.textCentro);
+            this.Controls.Add(this.txtMayor);
+            this.Controls.Add(this.txtCentro);
             this.Controls.Add(this.txtMenor);
             this.Controls.Add(this.txt3);
             this.Controls.Add(this.txt2);
@@ -176,7 +176,7 @@
         private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.TextBox txtMenor;
-        private System.Windows.Forms.TextBox textCentro;
-        private System.Windows.Forms.TextBox textMayor;
+        private System.Windows.Forms.TextBox txtCentro;
+        private System.Windows.Forms.TextBox txtMayor;
     }
 }
