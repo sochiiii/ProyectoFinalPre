@@ -77,6 +77,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Herencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Herencia.Designer.cs">
+      <DependentUpon>Herencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ordenamiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Herencia.resx">
+      <DependentUpon>Herencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ordenamiento.resx">
       <DependentUpon>Ordenamiento.cs</DependentUpon>
@@ -186,6 +195,7 @@
     <Content Include="assets\from_plano_cart\g5.png" />
     <Content Include="assets\from_plano_cart\mas1.png" />
     <Content Include="assets\from_plano_cart\menos1.png" />
+    <None Include="Resources\fondoHerencia.png" />
     <None Include="Resources\ventanaOrdenamiento.png" />
     <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation %282%29.jpg" />
     <None Include="Resources\Orange Blue Retro Guess The TV Show Game Presentation %281%29.jpg" />

@@ -48,15 +48,15 @@ namespace ProyectoFinalPre104
         private void button4_Click(object sender, EventArgs e)
         {
             DialogResult opcion = MessageBox.Show(
-        "¿Desea salir del sistema?",   
-        "Confirmación",               
-        MessageBoxButtons.YesNo,      
-        MessageBoxIcon.Question       
+        "¿Desea salir del sistema?",
+        "Confirmación",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
     );
 
             if (opcion == DialogResult.Yes)
             {
-                Application.Exit(); 
+                Application.Exit();
             }
         }
 
@@ -74,7 +74,7 @@ namespace ProyectoFinalPre104
 
         private void button6_Click(object sender, EventArgs e)
         {
-           Promedio ventanaProm = new Promedio();
+            Promedio ventanaProm = new Promedio();
             ventanaProm.Show();
             this.Hide();
         }
@@ -83,6 +83,13 @@ namespace ProyectoFinalPre104
         {
             Ordenamiento ventanaOrden = new Ordenamiento();
             ventanaOrden.Show();
+            this.Hide();
+        }
+
+        private void btnHerencia_Click(object sender, EventArgs e)
+        {
+            Herencia ventanaHerencia = new Herencia();
+            ventanaHerencia.Show();
             this.Hide();
         }
     }

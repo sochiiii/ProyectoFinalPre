@@ -116,7 +116,7 @@
             this.button5.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(140, 346);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(135, 62);
             this.button5.TabIndex = 5;
@@ -130,7 +130,7 @@
             this.button6.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(552, 346);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(135, 62);
             this.button6.TabIndex = 6;
@@ -164,6 +164,7 @@
             this.btnHerencia.TabIndex = 8;
             this.btnHerencia.Text = "HERENCIA";
             this.btnHerencia.UseVisualStyleBackColor = false;
+            this.btnHerencia.Click += new System.EventHandler(this.btnHerencia_Click);
             // 
             // Form1
             // 

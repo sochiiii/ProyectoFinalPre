@@ -153,6 +153,16 @@ namespace ProyectoFinalPre104.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondoHerencia {
+            get {
+                object obj = ResourceManager.GetObject("fondoHerencia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap g5 {
             get {
                 object obj = ResourceManager.GetObject("g5", resourceCulture);
