@@ -62,7 +62,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.label1.Location = new System.Drawing.Point(511, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 23);
+            this.label1.Size = new System.Drawing.Size(368, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingrese las coordenadas del punto:";
             // 
@@ -73,7 +73,7 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Location = new System.Drawing.Point(511, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 25);
+            this.label2.Size = new System.Drawing.Size(34, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "X:";
             // 
@@ -84,7 +84,7 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Location = new System.Drawing.Point(510, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 25);
+            this.label3.Size = new System.Drawing.Size(35, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "Y:";
             // 
@@ -92,7 +92,7 @@
             // 
             this.X_pos.Location = new System.Drawing.Point(559, 55);
             this.X_pos.Name = "X_pos";
-            this.X_pos.Size = new System.Drawing.Size(192, 29);
+            this.X_pos.Size = new System.Drawing.Size(192, 35);
             this.X_pos.TabIndex = 5;
             this.X_pos.Text = "0";
             this.X_pos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -102,7 +102,7 @@
             // 
             this.Y_pos.Location = new System.Drawing.Point(559, 100);
             this.Y_pos.Name = "Y_pos";
-            this.Y_pos.Size = new System.Drawing.Size(192, 29);
+            this.Y_pos.Size = new System.Drawing.Size(192, 35);
             this.Y_pos.TabIndex = 6;
             this.Y_pos.Text = "0";
             this.Y_pos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -115,7 +115,7 @@
             this.lbl_point.ForeColor = System.Drawing.Color.AliceBlue;
             this.lbl_point.Location = new System.Drawing.Point(500, 235);
             this.lbl_point.Name = "lbl_point";
-            this.lbl_point.Size = new System.Drawing.Size(169, 23);
+            this.lbl_point.Size = new System.Drawing.Size(213, 27);
             this.lbl_point.TabIndex = 7;
             this.lbl_point.Text = "-> Punto ingresado:";
             this.lbl_point.Visible = false;
@@ -128,7 +128,7 @@
             this.lbl_punto_ingresado.ForeColor = System.Drawing.Color.AliceBlue;
             this.lbl_punto_ingresado.Location = new System.Drawing.Point(500, 265);
             this.lbl_punto_ingresado.Name = "lbl_punto_ingresado";
-            this.lbl_punto_ingresado.Size = new System.Drawing.Size(67, 23);
+            this.lbl_punto_ingresado.Size = new System.Drawing.Size(83, 27);
             this.lbl_punto_ingresado.TabIndex = 8;
             this.lbl_punto_ingresado.Text = "( 0, 0 )";
             this.lbl_punto_ingresado.Visible = false;
@@ -140,7 +140,7 @@
             this.lbl_ub.ForeColor = System.Drawing.Color.AliceBlue;
             this.lbl_ub.Location = new System.Drawing.Point(500, 295);
             this.lbl_ub.Name = "lbl_ub";
-            this.lbl_ub.Size = new System.Drawing.Size(303, 23);
+            this.lbl_ub.Size = new System.Drawing.Size(377, 27);
             this.lbl_ub.TabIndex = 9;
             this.lbl_ub.Text = "-> El punto ingresado se ubica en el:";
             this.lbl_ub.Visible = false;
@@ -152,7 +152,7 @@
             this.lbl_resultado.ForeColor = System.Drawing.Color.AliceBlue;
             this.lbl_resultado.Location = new System.Drawing.Point(500, 325);
             this.lbl_resultado.Name = "lbl_resultado";
-            this.lbl_resultado.Size = new System.Drawing.Size(66, 23);
+            this.lbl_resultado.Size = new System.Drawing.Size(81, 27);
             this.lbl_resultado.TabIndex = 10;
             this.lbl_resultado.Text = "Origen";
             this.lbl_resultado.Visible = false;
@@ -165,7 +165,7 @@
             this.y_div_1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.y_div_1.Location = new System.Drawing.Point(243, 43);
             this.y_div_1.Name = "y_div_1";
-            this.y_div_1.Size = new System.Drawing.Size(44, 16);
+            this.y_div_1.Size = new System.Drawing.Size(54, 19);
             this.y_div_1.TabIndex = 11;
             this.y_div_1.Text = "1x10^0";
             // 
@@ -177,7 +177,7 @@
             this.y_div_2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.y_div_2.Location = new System.Drawing.Point(243, 434);
             this.y_div_2.Name = "y_div_2";
-            this.y_div_2.Size = new System.Drawing.Size(49, 16);
+            this.y_div_2.Size = new System.Drawing.Size(61, 19);
             this.y_div_2.TabIndex = 12;
             this.y_div_2.Text = "-1x10^0";
             // 
@@ -189,7 +189,7 @@
             this.x_div_1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.x_div_1.Location = new System.Drawing.Point(408, 268);
             this.x_div_1.Name = "x_div_1";
-            this.x_div_1.Size = new System.Drawing.Size(44, 16);
+            this.x_div_1.Size = new System.Drawing.Size(54, 19);
             this.x_div_1.TabIndex = 13;
             this.x_div_1.Text = "1x10^0";
             // 
@@ -201,7 +201,7 @@
             this.x_div_2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.x_div_2.Location = new System.Drawing.Point(12, 268);
             this.x_div_2.Name = "x_div_2";
-            this.x_div_2.Size = new System.Drawing.Size(49, 16);
+            this.x_div_2.Size = new System.Drawing.Size(61, 19);
             this.x_div_2.TabIndex = 14;
             this.x_div_2.Text = "-1x10^0";
             // 
@@ -213,7 +213,7 @@
             this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label7.Location = new System.Drawing.Point(208, 256);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(15, 16);
+            this.label7.Size = new System.Drawing.Size(19, 19);
             this.label7.TabIndex = 15;
             this.label7.Text = "0";
             // 
@@ -346,7 +346,7 @@
             // 
             // Plano_Cartesiano
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(864, 461);
@@ -376,9 +376,13 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lcd);
             this.Font = new System.Drawing.Font("Berlin Sans FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Plano_Cartesiano";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Plano cartesiano";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

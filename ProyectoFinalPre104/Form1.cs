@@ -78,5 +78,12 @@ namespace ProyectoFinalPre104
             ventanaProm.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Ordenamiento ventanaOrden = new Ordenamiento();
+            ventanaOrden.Show();
+            this.Hide();
+        }
     }
 }

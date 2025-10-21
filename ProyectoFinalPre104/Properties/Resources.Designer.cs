@@ -299,5 +299,15 @@ namespace ProyectoFinalPre104.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ventanaOrdenamiento {
+            get {
+                object obj = ResourceManager.GetObject("ventanaOrdenamiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
