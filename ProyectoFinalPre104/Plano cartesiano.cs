@@ -278,10 +278,6 @@ namespace ProyectoFinalPre104
         {
             if (mostar.Text == "CALCULAR")
             {
-                //Actualiza las posiciones del punto antes de mostrar
-                punto_ingresado[0] = Double.Parse(X_pos.Text);
-                punto_ingresado[1] = Double.Parse(Y_pos.Text);
-
                 //Actualizar punto antes de mostrar/ocultar
                 actualizar_punto();
                 point.Show();
@@ -307,6 +303,7 @@ namespace ProyectoFinalPre104
             else
             {
                 //Mostrar información
+                actualizar_punto();
                 lcd.BackColor = Color.FromArgb(0, 0, 145);
                 lbl_point.Show();
                 lbl_punto_ingresado.Show();
