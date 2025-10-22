@@ -255,6 +255,12 @@ namespace ProyectoFinalPre104
                 if (mostrar_info == true)
                 {
                     mostar.Text = "CALCULAR";
+                    point.Hide();
+                    lcd.BackColor = Color.DarkGray;
+                    lbl_point.BackColor = Color.DarkGray;
+                    lbl_punto_ingresado.BackColor = Color.DarkGray;
+                    lbl_resultado.BackColor = Color.DarkGray;
+                    lbl_ub.BackColor = Color.DarkGray;
                 }
             }
         }
