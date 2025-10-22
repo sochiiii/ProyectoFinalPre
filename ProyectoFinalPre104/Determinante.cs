@@ -197,5 +197,10 @@ namespace ProyectoFinalPre104
             txtY.Text = "";
             txtA.Focus();
         }
+
+        private void Determinante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

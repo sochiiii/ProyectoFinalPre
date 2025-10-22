@@ -46,9 +46,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 196);
+            this.label1.Location = new System.Drawing.Point(131, 159);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 0;
             // 
             // btnVolver
@@ -57,9 +58,10 @@
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(39, 417);
+            this.btnVolver.Location = new System.Drawing.Point(29, 339);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(151, 42);
+            this.btnVolver.Size = new System.Drawing.Size(113, 34);
             this.btnVolver.TabIndex = 1;
             this.btnVolver.Text = "Regresar";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -71,9 +73,10 @@
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(234, 417);
+            this.btnLimpiar.Location = new System.Drawing.Point(176, 339);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(143, 42);
+            this.btnLimpiar.Size = new System.Drawing.Size(107, 34);
             this.btnLimpiar.TabIndex = 2;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -85,9 +88,10 @@
             this.btnCalcular.FlatAppearance.BorderSize = 0;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(716, 162);
+            this.btnCalcular.Location = new System.Drawing.Point(537, 132);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(160, 37);
+            this.btnCalcular.Size = new System.Drawing.Size(120, 30);
             this.btnCalcular.TabIndex = 3;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -96,50 +100,56 @@
             // txtA
             // 
             this.txtA.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtA.Location = new System.Drawing.Point(536, 181);
+            this.txtA.Location = new System.Drawing.Point(402, 147);
+            this.txtA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(161, 27);
+            this.txtA.Size = new System.Drawing.Size(122, 23);
             this.txtA.TabIndex = 4;
             this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
             // 
             // txtB
             // 
             this.txtB.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.Location = new System.Drawing.Point(536, 214);
+            this.txtB.Location = new System.Drawing.Point(402, 174);
+            this.txtB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(161, 27);
+            this.txtB.Size = new System.Drawing.Size(122, 23);
             this.txtB.TabIndex = 5;
             // 
             // txtR
             // 
             this.txtR.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtR.Location = new System.Drawing.Point(536, 258);
+            this.txtR.Location = new System.Drawing.Point(402, 210);
+            this.txtR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(161, 27);
+            this.txtR.Size = new System.Drawing.Size(122, 23);
             this.txtR.TabIndex = 6;
             // 
             // txtC
             // 
             this.txtC.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtC.Location = new System.Drawing.Point(536, 301);
+            this.txtC.Location = new System.Drawing.Point(402, 245);
+            this.txtC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtC.Name = "txtC";
-            this.txtC.Size = new System.Drawing.Size(161, 27);
+            this.txtC.Size = new System.Drawing.Size(122, 23);
             this.txtC.TabIndex = 7;
             // 
             // txtD
             // 
             this.txtD.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtD.Location = new System.Drawing.Point(536, 341);
+            this.txtD.Location = new System.Drawing.Point(402, 277);
+            this.txtD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtD.Name = "txtD";
-            this.txtD.Size = new System.Drawing.Size(161, 27);
+            this.txtD.Size = new System.Drawing.Size(122, 23);
             this.txtD.TabIndex = 8;
             // 
             // txtS
             // 
             this.txtS.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtS.Location = new System.Drawing.Point(536, 379);
+            this.txtS.Location = new System.Drawing.Point(402, 308);
+            this.txtS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtS.Name = "txtS";
-            this.txtS.Size = new System.Drawing.Size(161, 27);
+            this.txtS.Size = new System.Drawing.Size(122, 23);
             this.txtS.TabIndex = 9;
             // 
             // txtX
@@ -148,9 +158,10 @@
             this.txtX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtX.Enabled = false;
             this.txtX.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX.Location = new System.Drawing.Point(219, 269);
+            this.txtX.Location = new System.Drawing.Point(164, 219);
+            this.txtX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(170, 25);
+            this.txtX.Size = new System.Drawing.Size(128, 20);
             this.txtX.TabIndex = 10;
             // 
             // txtY
@@ -159,18 +170,19 @@
             this.txtY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtY.Enabled = false;
             this.txtY.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY.Location = new System.Drawing.Point(219, 322);
+            this.txtY.Location = new System.Drawing.Point(164, 262);
+            this.txtY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(170, 25);
+            this.txtY.Size = new System.Drawing.Size(128, 20);
             this.txtY.TabIndex = 11;
             // 
             // Determinante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProyectoFinalPre104.Properties.Resources.fondo1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(913, 497);
+            this.ClientSize = new System.Drawing.Size(685, 404);
             this.Controls.Add(this.txtY);
             this.Controls.Add(this.txtX);
             this.Controls.Add(this.txtS);
@@ -186,11 +198,13 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Determinante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Determinante";
+            this.Load += new System.EventHandler(this.Determinante_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
