@@ -148,5 +148,10 @@ namespace ProyectoFinalPre104
             txtMayor.Text = "";
             txt1.Focus();
         }
+
+        private void Ordenamiento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -18,18 +18,13 @@ namespace ProyectoFinalPre104
         }
         private void Promedio_Load(object sender, EventArgs e)
         {
-            // Campos limpios al cargar
-            txtVenta1.Clear();
-            txtVenta2.Clear();
-            txtVenta3.Clear();
-            txtPromedio.Clear();
-            lblMensaje.Text = "";
+            
         }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                // Declaracion de variables
+                // Declaracion de variables 
                 Double v1, v2, v3, prom;
 
                 // Entrada de datos
@@ -56,20 +51,22 @@ namespace ProyectoFinalPre104
                 // Validacion de la promocion
                 if (prom >= 500)
                 {
-                    lblMensaje.Text = "SE HA GANADO UN REGALITO, UN REGALAZO";
+                    lblMensaje.Text = "🎉 SE HA GANADO UN REGALITO 🎁";
                     lblMensaje.ForeColor = Color.Green;
                 }
                 else
                 {
-                    lblMensaje.Text = "....Lo esperamos pronto...vaya con cuidado";
+                    lblMensaje.Text = "....🤗 Lo esperamos pronto...vaya con cuidado";
                     lblMensaje.ForeColor = Color.Orange;
                 }
             }
+            //Validacion que detecta cuando el usuario ingresa un valor que no es un número
             catch (FormatException)
             {
                 MessageBox.Show("Por favor ingrese valores numéricos válidos",
                     "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            //Validacion para evitar cualquier otro tipo de formato extraño 
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error",
