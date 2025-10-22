@@ -278,7 +278,7 @@ namespace ProyectoFinalPre104
         {
             if (mostar.Text == "CALCULAR")
             {
-                //Actualiza las posiciones del punto
+                //Actualiza las posiciones del punto antes de mostrar
                 punto_ingresado[0] = Double.Parse(X_pos.Text);
                 punto_ingresado[1] = Double.Parse(Y_pos.Text);
 
