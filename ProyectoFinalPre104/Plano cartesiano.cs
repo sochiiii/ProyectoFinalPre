@@ -276,8 +276,12 @@ namespace ProyectoFinalPre104
         //Botón para mostrar/ocultar la información
         private void button6_Click(object sender, EventArgs e)
         {
-            if(mostar.Text == "CALCULAR")
+            if (mostar.Text == "CALCULAR")
             {
+                //Actualiza las posiciones del punto
+                punto_ingresado[0] = Double.Parse(X_pos.Text);
+                punto_ingresado[1] = Double.Parse(Y_pos.Text);
+
                 //Actualizar punto antes de mostrar/ocultar
                 actualizar_punto();
                 point.Show();
